@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/shopware/shopware/5.2/engine/Shopware/Components/Plugin/schema/plugin.xsd">
+    <label lang="de">Versandkosten-Positionen einzeln anzeigen</label>
+    <label lang="en">Display shipping costs items individually</label>
+
+    <version>2.3.0</version>
+    <copyright>Copyright (c) 2021, Netzhirsch GbR</copyright>
+    <link>https://www.netzhirsch.de</link>
+    <license>proprietary</license>
+    <author>Netzhirsch GbR</author>
+    <compatibility minVersion="5.2.0" />
+    
+    <description lang="de">Mit diesem Plugin können Sie die berechneten Versandkosten-Positionen einzeln im Warenkorb auflisten lassen. Dadurch bekommt der Kunde einen besseren Überblick darüber, wie sich die Versandkosten zusammensetzen. Diese Möglichkeit ist zudem für jede Versand-Position einzeln aktivierbar.</description>
+	<description lang="en">With this plugin you can list the calculated shipping costs items individually in the shopping cart. This gives the customer a better overview of how the shipping costs are composed. This option can also be activated individually for each shipping item.</description>
+    
+    <changelog version="1.0.0">
+        <changes lang="de">Initiale Version</changes>
+        <changes lang="en">Initial version</changes>
+    </changelog>
+
+    <changelog version="1.0.1">
+        <changes lang="de">Kompatibilität zu PHP 7 hergestellt.</changes>
+        <changes lang="en">Compatibility with PHP 7 made.</changes>
+    </changelog>
+
+    <changelog version="1.0.2">
+        <changes lang="de">Fehlerbehebung für Kundengruppe 'Händler' bei Netto-Preisen.</changes>
+        <changes lang="en">Bug fix for customer group 'Merchant' at net prices.</changes>
+    </changelog>
+
+    <changelog version="1.0.3">
+        <changes lang="de">Nach dem Deinstallieren des Plugins werden die Modells neu generiert, da es sonst zu Cache-Problemen kommen kann.</changes>
+        <changes lang="en">After uninstalling the plugin, the models are regenerated, otherwise cache problems may occur.</changes>
+    </changelog>
+
+    <changelog version="1.0.4">
+        <changes lang="de">Diverse kleinere Anpassungen. Vereinheitlichte Icons erstellt.</changes>
+        <changes lang="en">Various minor adjustments. Unified icons created.</changes>
+    </changelog>
+
+    <changelog version="1.0.5">
+        <changes lang="de">Bei einem Wert von 0 kann die Versandkosten-Position optional ausgeblendet werden.</changes>
+        <changes lang="en">If the value is 0, the shipping position can be hidden as an option.</changes>
+    </changelog>
+
+    <changelog version="1.1.0">
+        <changes lang="de">Kompatibilität zu Shopware 5.5.0 hergestellt: ionCube-Verschlüsselung wurde entfernt.</changes>
+        <changes lang="en">Compatibility with Shopware 5.5.0 made: ionCube encryption has been removed.</changes>
+    </changelog>
+
+    <changelog version="1.1.1">
+        <changes lang="de">Fehlerkorrektur bei Versandkostenberechnungen mit eigener Berechnung. In diesem Fall erfolgte keine separate Ausgabe der Versandkosten.</changes>
+        <changes lang="en">Error correction for shipping cost calculations with own calculation. In this case, there was no separate output of shipping costs.</changes>
+    </changelog>
+
+    <changelog version="1.1.2">
+        <changes lang="de">Fehlerkorrektur bei der in gewissen Konstellationen negative Versandkosten entstanden sind.</changes>
+        <changes lang="en">Error correction in which in certain constellations negative shipping costs have arisen.</changes>
+    </changelog>
+
+    <changelog version="2.0.0">
+        <changes lang="de">Die Versandkosten werden nun auch in der Bestellbestätigungs-Mail richtig ausgegeben.</changes>
+        <changes lang="en">The shipping costs are now properly spent in the order confirmation mail.</changes>
+    </changelog>
+
+    <changelog version="2.1.0">
+        <changes lang="de">In gewissen Konstellationen wurden die Steuersätze nicht berücksichtigt. Dies ist nun korrigiert.</changes>
+        <changes lang="en">In certain constellations, the tax rates were not taken into account. This is now corrected.</changes>
+    </changelog>
+
+    <changelog version="2.1.1">
+        <changes lang="de">Die Versandkosten werden nun auch in der Bestellbestätigung richtig ausgegeben.</changes>
+        <changes lang="en">The shipping costs are now properly spent in the order confirmation.</changes>
+    </changelog>
+
+    <changelog version="2.1.2">
+        <changes lang="de">Einfügen eines Events zur Erhöhung der Kompatibilität mit anderen Plugins.</changes>
+        <changes lang="en">Insert an event to increase compatibility with other plugins.</changes>
+    </changelog>
+
+    <changelog version="2.2.0">
+        <changes lang="de">Kompatibilität zu Shopware 5.6 hergestellt.</changes>
+        <changes lang="en">Compatibility with Shopware 5.6 made.</changes>
+    </changelog>
+
+    <changelog version="2.2.1">
+        <changes lang="de"><![CDATA[Kleinere Fehlerbehebung bezüglich der Bezeichnung der Versandart - auch in Verbindung mit den Übersetzungen.<br>Einfügen eines Events zur Herstellung der Kompatibilität zum Plugin "One Page Checkout Advanced" von PremSoft.]]></changes>
+        <changes lang="en"><![CDATA[Minor bug fixes - also in connection with the translations. <br> Insert an event to make it compatible with PremSoft's One Page Checkout Advanced plugin.]]></changes>
+    </changelog>
+
+    <changelog version="2.3.0">
+        <changes lang="de">In Verbindung mit Versandkosten-Auf-/Abschlägen wurde nicht berücksichtigt, das die Standard-Versandart versandkostenfrei werden kann. Dies wurde nun korrigiert.</changes>
+        <changes lang="en">In connection with shipping costs surcharges / discounts, it was not taken into account that the standard shipping method can be free of charge. This has now been corrected. </changes>
+    </changelog>
+</plugin>
