@@ -3,7 +3,7 @@
     <label lang="de">Versandkosten-Positionen einzeln anzeigen</label>
     <label lang="en">Display shipping costs items individually</label>
 
-    <version>2.3.0</version>
+    <version>2.3.1</version>
     <copyright>Copyright (c) 2021, Netzhirsch GbR</copyright>
     <link>https://www.netzhirsch.de</link>
     <license>proprietary</license>
@@ -91,5 +91,10 @@
     <changelog version="2.3.0">
         <changes lang="de">In Verbindung mit Versandkosten-Auf-/Abschlägen wurde nicht berücksichtigt, das die Standard-Versandart versandkostenfrei werden kann. Dies wurde nun korrigiert.</changes>
         <changes lang="en">In connection with shipping costs surcharges / discounts, it was not taken into account that the standard shipping method can be free of charge. This has now been corrected. </changes>
+    </changelog>
+
+    <changelog version="2.3.1">
+        <changes lang="de">PHP 8 Kompatibilität hergestellt.</changes>
+        <changes lang="en">Compatibility with PHP 8 made.</changes>
     </changelog>
 </plugin>

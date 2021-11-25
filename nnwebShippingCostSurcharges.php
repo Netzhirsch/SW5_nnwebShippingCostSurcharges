@@ -181,20 +181,20 @@ class nnwebShippingCostSurcharges extends \Shopware\Components\Plugin {
 					}
 
 					if (empty($dispatch['calculation'])) {
-						$from = round($basket['weight'], 3);
+						$from = round(floatval($basket['weight']), 3);
 					} elseif ($dispatch['calculation'] == 1) {
 						if (
 							($this->config->get('sARTICLESOUTPUTNETTO') && !$this->sSYSTEM->sUSERGROUPDATA['tax']) ||
 							(!$this->sSYSTEM->sUSERGROUPDATA['tax'] && $this->sSYSTEM->sUSERGROUPDATA['id'])
 						) {
-							$from = round($basket['amount_net'], 2);
+							$from = round(floatval($basket['amount_net']), 2);
 						} else {
-							$from = round($basket['amount'], 2);
+							$from = round(floatval($basket['amount']), 2);
 						}
 					} elseif ($dispatch['calculation'] == 2) {
-						$from = round($basket['count_article']);
+						$from = round(floatval($basket['count_article']));
 					} elseif ($dispatch['calculation'] == 3) {
-						$from = round($basket['calculation_value_' . $dispatch['id']]);
+						$from = round(floatval($basket['calculation_value_' . $dispatch['id']]));
 					} else {
 						continue;
 					}
